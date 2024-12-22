@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subway McFrappe Skibidi Mbappe</title>
+  <style>
+    /* Center the button in the middle of the page */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #000000; /* Optional background color */
+    }
+
+    /* Style the "GET OUT" button */
+    #getOutButton {
+      background-color: #e63946;
+      color: #ffffff;
+      font-size: 1.5em;
+      padding: 16px 32px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Add a hover effect */
+    #getOutButton:hover {
+      background-color: #dc2f3c;
+    }
+  </style>
+</head>
+<body>
+  <!-- Button -->
+  <button id="getOutButton">Subway McFrappe Skibidi Mbappe</button>
+
+  <!-- Hidden audio element -->
+  <audio id="getOutAudio" src="cool.m4a"></audio>
+
+  <script>
+    // Get references to the button and audio elements
+    const getOutButton = document.getElementById('getOutButton');
+    const getOutAudio = document.getElementById('getOutAudio');
+
+    // When the button is clicked, play the audio
+    getOutButton.addEventListener('click', () => {
+      // Some browsers require user interaction before playing audio
+      getOutAudio.play();
+    });
+  </script>
+</body>
+</html>
+
